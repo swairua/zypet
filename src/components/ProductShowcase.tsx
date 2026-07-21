@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MessageCircle, Check, Drumstick, Rabbit, Beef } from 'lucide-react';
-import rabbitWithoutFurAsset from '@/assets/rabbit-without-fur.png.asset.json?url';
-import rabbitMincedAsset from '@/assets/rabbit-minced.png.asset.json?url';
+import rabbitWithoutFur from '@/assets/rabbit-without-fur.jpg';
+import rabbitMinced from '@/assets/rabbit-minced.jpg';
 
 type Category = 'prey' | 'human' | 'chicken';
 type PreyVariant = 'with-fur' | 'without-fur' | 'minced-with-fur' | 'minced-without-fur';
@@ -27,21 +27,21 @@ const preyVariants: Record<PreyVariant, { title: string; pricePerKg: number; ima
   'without-fur': {
     title: 'Without Fur',
     pricePerKg: 600,
-    image: rabbitWithoutFurAsset,
+    image: rabbitWithoutFur,
     subtitle: 'Ideal for Cats & Puppies',
     benefits: ['Easier digestion', 'Perfect for cats', 'Ideal for puppies', 'Clean presentation'],
   },
   'minced-with-fur': {
     title: 'Minced With Fur',
     pricePerKg: 600,
-    image: rabbitMincedAsset,
+    image: rabbitMinced,
     subtitle: 'Easy-Serve Whole Prey',
     benefits: ['Ready to serve', 'Natural fiber included', 'Great for mixed feeders', 'Portion friendly'],
   },
   'minced-without-fur': {
     title: 'Minced Without Fur',
     pricePerKg: 700,
-    image: rabbitMincedAsset,
+    image: rabbitMinced,
     subtitle: 'Soft & Gentle',
     benefits: ['Perfect for seniors', 'Easy for small breeds', 'Fast digestion', 'No prep needed'],
   },
