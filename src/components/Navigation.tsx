@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Heart, MessageCircle } from 'lucide-react';
-import zypetLogo from '@/assets/zypet-icon.png.asset.json?url';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +28,7 @@ const Navigation = () => {
           {/* Logo */}
           <a href="/#home" className="flex items-center gap-2">
             <img
-              src={zypetLogo}
+              src="/zypet-logo.webp"
               alt="Zypet Nutrition icon"
               className="h-10 w-auto"
             />
