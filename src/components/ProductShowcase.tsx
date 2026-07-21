@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { MessageCircle, Check, Drumstick, Rabbit, Beef } from 'lucide-react';
 import rabbitWithoutFur from '@/assets/rabbit-without-fur.jpg';
-import rabbitMinced from '@/assets/rabbit-minced.jpg';
+import rabbitProduct from '@/assets/rabbit-product.jpg';
 
 type Category = 'prey' | 'human' | 'chicken';
 type PreyVariant = 'with-fur' | 'without-fur' | 'minced-with-fur' | 'minced-without-fur';
@@ -34,14 +34,14 @@ const preyVariants: Record<PreyVariant, { title: string; pricePerKg: number; ima
   'minced-with-fur': {
     title: 'Minced With Fur',
     pricePerKg: 600,
-    image: rabbitMinced,
+    image: rabbitProduct,
     subtitle: 'Easy-Serve Whole Prey',
     benefits: ['Ready to serve', 'Natural fiber included', 'Great for mixed feeders', 'Portion friendly'],
   },
   'minced-without-fur': {
     title: 'Minced Without Fur',
     pricePerKg: 700,
-    image: rabbitMinced,
+    image: rabbitProduct,
     subtitle: 'Soft & Gentle',
     benefits: ['Perfect for seniors', 'Easy for small breeds', 'Fast digestion', 'No prep needed'],
   },
