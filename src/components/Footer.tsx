@@ -1,6 +1,6 @@
 import { Heart, MessageCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import zypetLogo from '@/assets/zypet-icon.png.asset.json';
+import zypetLogo from '@/assets/zypet-icon.png.asset.json?url';
 const Footer = () => {
   const handleWhatsAppContact = () => {
     const phoneNumber = "254759436251"; // Updated WhatsApp number
@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <img
-                src={zypetLogo.url}
+                src={zypetLogo}
                 alt="Zypet Nutrition icon"
                 className="h-12 w-auto bg-background/95 rounded-md p-1"
               />
